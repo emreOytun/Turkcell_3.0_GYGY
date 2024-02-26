@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "4621ba1d-607c-4a83-a3c1-7689eb5001af",
+		"name": "HW2 Programming Languages Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23607671"
+	},
+	"item": [
+		{
+			"name": "Insert language",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"languageName\":\"java\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/languages/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"languages",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get language by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/languages/edc4a192-3865-488a-b86d-214a83ce2e08",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"languages",
+						"edc4a192-3865-488a-b86d-214a83ce2e08"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all languages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/languages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"languages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
